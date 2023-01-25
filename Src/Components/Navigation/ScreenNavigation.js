@@ -29,7 +29,7 @@ export default function ScreenNavigation() {
           },
           headerRight: () => (
             <View>
-              <Icon></Icon>
+             
               <Icon
                 name="search"
                 style={{color: 'white', fontSize: 16, paddingRight: 15}}></Icon>

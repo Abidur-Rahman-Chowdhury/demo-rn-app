@@ -44,6 +44,10 @@ export default function NextScreen() {
   return (
    
     <>
+      <View style={{flexDirection:'row', paddingBottom:10, paddingTop:10, borderBottomWidth:1, borderBottomColor: 'gray' ,marginBottom:10}}>
+        <Text style={{paddingLeft:20,fontSize:20, fontWeight:'bold',color:'black'}}>সকল কন্টাক্টস</Text>
+        <Text style={{paddingLeft:20,fontSize:20, color:'black', fontWeight:'100'}}> ডেমো অ্যাপ কন্টাক্টস</Text>
+      </View>
     <FlatList
       data={contacts}
       renderItem={renderItem}
@@ -57,5 +61,7 @@ export default function NextScreen() {
 const styles = StyleSheet.create({
   list: {
     flex: 1,
+    marginLeft: 20
+    
   },
 });
