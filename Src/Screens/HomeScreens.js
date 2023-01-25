@@ -1,7 +1,7 @@
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/FontAwesome'
 export default function HomeScreens(props) {
   const navigation = useNavigation();
   return (
@@ -112,9 +112,10 @@ export default function HomeScreens(props) {
                   borderRadius: 50,
                   backgroundColor: '#850101',
                 }}>
+                {/* plus icon will be hear */}
                 <Icon
                   name="plus"
-                  style={{fontSize: 20, fontWeight: '100', color: 'white'}}
+                  style={{fontSize: 16, fontWeight: '100', color: 'white', }}
                 />
               </View>
             </View>

@@ -3,7 +3,8 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreens from '../../Screens/HomeScreens';
 import NextScreen from '../../Screens/NextScreen';
-import  Icon  from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialIcons'
+
 
 
 const Stack = createNativeStackNavigator();
@@ -29,10 +30,10 @@ export default function ScreenNavigation() {
           },
           headerRight: () => (
             <View>
-             
-              <Icon
-                name="search"
-                style={{color: 'white', fontSize: 16, paddingRight: 15}}></Icon>
+              <Text>
+              <Icon name='search' size={25} color='white' />
+              </Text>
+              {/* search icon will be hear */}
             </View>
           ),
         }}></Stack.Screen>
@@ -58,9 +59,11 @@ export default function ScreenNavigation() {
           },
           headerRight: () => (
             <View>
-              <Icon
-                name="search"
-                style={{color: 'white', fontSize: 16, paddingRight: 15}}></Icon>
+              {/* search icon will be hear */}
+              <Text>
+              <Icon name='search' size={25} color='white' />
+              </Text>
+              
             </View>
           ),
         }}  
