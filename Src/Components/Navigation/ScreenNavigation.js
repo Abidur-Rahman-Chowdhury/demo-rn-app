@@ -43,7 +43,7 @@ export default function ScreenNavigation() {
         options={{
           headerTitle: () => (
             <View>
-              <View style={{flex: 1}}>
+              <View >
                 <Text
                   style={{fontSize: 15, color: 'white'}}>
                   কন্টাক্টস লিস্ট
@@ -61,9 +61,9 @@ export default function ScreenNavigation() {
                 style={{color: 'white', fontSize: 16, paddingRight: 15}}></Icon>
             </View>
           ),
-        }}
-      
+        }}  
       />
+      
     </Stack.Navigator>
   );
 }
