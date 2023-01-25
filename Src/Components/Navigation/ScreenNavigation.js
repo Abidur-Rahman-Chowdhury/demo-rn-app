@@ -3,8 +3,9 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreens from '../../Screens/HomeScreens';
 import NextScreen from '../../Screens/NextScreen';
+import  Icon  from 'react-native-vector-icons/FontAwesome';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 const Stack = createNativeStackNavigator();
 export default function ScreenNavigation() {
   return (
@@ -28,6 +29,7 @@ export default function ScreenNavigation() {
           },
           headerRight: () => (
             <View>
+              <Icon></Icon>
               <Icon
                 name="search"
                 style={{color: 'white', fontSize: 16, paddingRight: 15}}></Icon>
